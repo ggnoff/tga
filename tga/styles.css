@@ -1,0 +1,252 @@
+.navbar-nav .nav-link {
+    color: white !important;
+  }
+
+  .navbar,
+.navbar-light {
+  background-color: transparent !important;
+  box-shadow: none !important;
+}
+
+  
+  @media (max-width: 991.98px) { /* Applies on small screens (below lg breakpoint) */
+    .navbar-collapse {
+      text-align: center;
+    }
+  
+    .navbar-nav {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center; /* Center the items horizontally */
+    }
+  
+    .navbar-nav .nav-link {
+      width: 100%;
+    }
+  }
+  @media (min-width: 992px) {
+    .navbar-nav {
+      margin-right: 100px; /* move left */
+    }
+    .shift-logo{
+        margin-left: 120px;
+    }
+  }
+  
+  body {
+    /* center image */
+   
+    background-color: #F0F2F7;                   /* remove default margin */
+  }
+  
+  .landing {
+    height: 100vh; /* fills full screen height */
+    background-image: url('./asset/hdcity.jpg');
+    background-size: cover;         /* scales image to cover whole area */
+    background-position: center;    /* centers the image */
+    background-repeat: no-repeat; 
+  }
+  
+  .title {
+    display: flex;              /* use flexbox */
+    justify-content: center;    /* center the whole block horizontally */
+  }
+  .title {
+    position: relative;
+    padding-top: 60px; /* leave space for navbar if needed */
+  }
+  .colorh1{
+    color: #F57E34
+  }
+  .sub-head {
+    position: absolute;
+    top: 10px;      /* 10px down from the top */
+    right: 15px;    /* 15px in from the right */
+    font-size: 14px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 5px 10px;
+    border-radius: 5px;
+  }
+  
+  
+  .landing-content {
+    text-align: left;             /* keep text aligned to the left */
+    max-width: 600px;             /* optional: control width */
+    padding: 20px;                /* optional: spacing */
+    color: white;  
+    margin-top: 10%;              /* optional: for visibility */
+  }
+  
+  .vision {
+  display: flex;
+  flex-direction: row;         /* row by default (large screens) */
+  align-items: center;
+  justify-content: center;
+  gap: 40px;                   /* space between text and image */
+  padding: 40px 20px;
+}
+
+.vision-text {
+  flex: 2;
+  text-align: left;
+ 
+}
+
+.vision-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.vision-image img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Stack vertically on small screens */
+@media (max-width: 768px) {
+  .vision {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .vision-text {
+    text-align: left; /* keep text left-aligned if you prefer */
+  }
+  .vision-image img {
+    max-width: 100%; /* smaller image size on small screens */
+    height: auto;
+  }
+}
+
+.mission {
+    display: flex;
+    flex-direction: row;         /* row by default (large screens) */
+    align-items: center;
+    justify-content: center;
+    gap: 40px;                   /* space between text and image */
+    padding: 40px 20px;
+  }
+  
+  .mission-text {
+    flex: 1;
+    text-align: left;
+  }
+  
+  .mission-image {
+    flex: 2;
+    display: flex;
+    justify-content: center;
+    
+  }
+  
+  .mission-image img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* Stack vertically and resize image on small screens */
+  @media (max-width: 768px) {
+    .mission {
+      flex-direction: column-reverse;
+      text-align: center;
+    }
+  
+    .mission-text {
+      text-align: left; /* keep text left-aligned if you prefer */
+    }
+  
+    .mission-image img {
+      max-width: 100%; /* smaller image size on small screens */
+      height: auto;
+    }
+  }
+  
+
+  .commitment {
+    display: flex;
+    flex-direction: row;         /* row by default (large screens) */
+    align-items: center;
+    justify-content: center;
+    gap: 40px;                   /* space between text and image */
+    padding: 40px 20px;
+  }
+  
+  .commitment-text {
+    flex: 1;
+    text-align: left;
+  }
+  
+  .commitment-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .commitment-image img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* Stack vertically on small screens with image after text */
+  @media (max-width: 768px) {
+    .commitment {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .commitment-text {
+      order: 1;             /* text first */
+      text-align: left;     /* keep text left aligned */
+    }
+  
+    .commitment-image {
+      order: 2;             /* image second */
+    }
+  }
+
+
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background-color: #D9D9D9;
+    color: #fff;
+  }
+  
+  .footer-logo {
+    height: 40px; /* Adjust as needed */
+  }
+  
+  .footer-right a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .footer-right a:hover {
+    text-decoration: underline;
+  }
+  
+  @media (max-width: 768px) {
+    .footer {
+      flex-direction: column;
+      text-align: center;
+      padding: 10px;
+    }
+  
+    .footer-left,
+    .footer-right {
+      width: 100%;
+    }
+  
+    .footer-logo {
+      margin-bottom: 10px;
+    }
+  }
+  
+
+  
+  

@@ -1,0 +1,260 @@
+.navbar-nav .nav-link {
+    color: white !important;
+  }
+  
+  .navbar,
+  .navbar-light {
+  background-color:#D9D9D9;
+  
+  }
+  
+  .navbar {
+    padding-top: 0.25rem;    /* reduce top padding */
+    padding-bottom: 1rem; /* reduce bottom padding */
+    height: auto;        /* set a smaller min-height */
+  }
+  
+  .navbar-brand img {
+    height: 100px;            /* smaller logo height */
+    width: auto;             /* keep aspect ratio */
+  }
+  
+  .nav-link {
+    padding-top: 0.25rem;
+    padding-bottom: 1.5rem;
+    font-size: 0.9rem;       /* optionally smaller font */
+  }
+  
+  @media (max-width: 991.98px) { /* Applies on small screens (below lg breakpoint) */
+    .navbar-collapse {
+      text-align: center;
+    }
+  
+    .navbar-nav {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center; /* Center the items horizontally */
+    }
+  
+    .navbar-nav .nav-link {
+      width: 100%;
+    }
+  }
+  @media (min-width: 992px) {
+    .navbar-nav {
+      margin-right: 100px; /* move left */
+    }
+    .shift-logo{
+        margin-left: 120px;
+    }
+  }
+  
+  body {
+    /* center image */
+   
+    background-color: #F0F2F7;                   /* remove default margin */
+  }
+
+
+ 
+ 
+  
+  .title {
+    display: flex;              /* use flexbox */
+    justify-content: center;    /* center the whole block horizontally */
+  }
+  .title {
+    position: relative;
+    margin-top: 60px;
+   /* leave space for navbar if needed */
+  }
+  .landing {
+    height: 100vh; /* fills full screen height */
+    background-image: url('./asset/bodaiju_top.jpg');
+    background-size: cover;         /* scales image to cover whole area */
+    background-position: center;    /* centers the image */
+    background-repeat: no-repeat; 
+  }
+  .landing-content {
+    text-align: left;             /* keep text aligned to the left */
+    max-width: 600px;             /* optional: control width */
+    padding: 20px;                /* optional: spacing */
+    color: white;  
+    margin-top: 10%;              /* optional: for visibility */
+  }
+  
+  .ownership {
+    display: flex;
+    flex-direction: row;  /* horizontal layout */
+    align-items: center;  /* vertically center both */
+    gap: 40px;            /* space between text and image */
+    padding: 40px 20px;
+  }
+  
+  .ownership-text {
+    
+    flex: 2;              /* text takes more space */
+    text-align: left;
+  }
+  
+  .ownership-image {
+    flex: 1;              /* image takes less space */
+    display: flex;
+    justify-content: flex-end;  /* push image to the right side */
+  }
+  
+  .ownership-image img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  
+  /* On smaller screens stack vertically with text first, image below */
+  @media (max-width: 768px) {
+    .ownership {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .ownership-text {
+      text-align: left; /* or center if you want */
+    }
+  }
+  
+  
+  .whyus {
+    display: flex;
+    flex-direction: row;        /* horizontal layout */
+    align-items: center;        /* vertically center content */
+    gap: 40px;                  /* space between text and image */
+    padding: 40px 20px;
+  }
+  
+  .whyus-text {
+    flex: 2;                    /* text takes more space */
+    text-align: left;
+  }
+  
+  .whyus-image {
+    flex: 1;                    /* image takes less space */
+    display: flex;
+    justify-content: flex-end;  /* align image to the right */
+  }
+  
+  .whyus-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;         /* optional for rounded corners */
+  }
+  
+  /* Stack vertically on smaller screens */
+  @media (max-width: 768px) {
+    .whyus {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .whyus-text {
+      text-align: left;         /* adjust to 'center' if preferred */
+    }
+  
+    .whyus-image {
+      justify-content: center;  /* center image on small screens */
+    }
+  }
+  
+
+  .chat {
+    border: 2px solid orange;
+    padding: 30px;
+    border-radius: 10px;
+    margin: 40px auto;          /* centers the box horizontally */
+    max-width: 1000px;          /* limits width */
+    width: 90%;                 /* leaves margin on both sides */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05); /* optional subtle shadow */
+  }
+  
+  .chat-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .chat-text {
+    flex: 2;
+    text-align: left;
+  }
+  
+  .chat-button {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .chat-button .btn {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: orange;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: background 0.3s ease;
+  }
+  
+  .chat-button .btn:hover {
+    background-color: darkorange;
+  }
+  
+  @media (max-width: 768px) {
+    .chat-content {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .chat-button {
+      justify-content: flex-start;
+    }
+  }
+  
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background-color: #D9D9D9;
+    color: #fff;
+  }
+  
+  .footer-logo {
+    height: 40px; /* Adjust as needed */
+  }
+  
+  .footer-right a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .footer-right a:hover {
+    text-decoration: underline;
+  }
+  
+  @media (max-width: 768px) {
+    .footer {
+      flex-direction: column;
+      text-align: center;
+      padding: 10px;
+    }
+  
+    .footer-left,
+    .footer-right {
+      width: 100%;
+    }
+  
+    .footer-logo {
+      margin-bottom: 10px;
+    }
+  }

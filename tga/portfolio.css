@@ -1,0 +1,132 @@
+.navbar-nav .nav-link {
+    color: white !important;
+  }
+  
+  .navbar,
+  .navbar-light {
+  background-color:#D9D9D9;
+  
+  }
+  
+  .navbar {
+    padding-top: 0.25rem;    /* reduce top padding */
+    padding-bottom: 1rem; /* reduce bottom padding */
+    height: auto;        /* set a smaller min-height */
+  }
+  
+  .navbar-brand img {
+    height: 100px;            /* smaller logo height */
+    width: auto;             /* keep aspect ratio */
+  }
+  
+  .nav-link {
+    padding-top: 0.25rem;
+    padding-bottom: 1.5rem;
+    font-size: 0.9rem;       /* optionally smaller font */
+  }
+  
+  @media (max-width: 991.98px) { /* Applies on small screens (below lg breakpoint) */
+    .navbar-collapse {
+      text-align: center;
+    }
+  
+    .navbar-nav {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center; /* Center the items horizontally */
+    }
+  
+    .navbar-nav .nav-link {
+      width: 100%;
+    }
+  }
+  @media (min-width: 992px) {
+    .navbar-nav {
+      margin-right: 100px; /* move left */
+    }
+    .shift-logo{
+        margin-left: 120px;
+    }
+  }
+  
+  body {
+    /* center image */
+   
+    background-color: #F0F2F7;                   /* remove default margin */
+  }
+
+
+  .project {
+    margin: 20px auto;
+    padding: 0 10px; /* small gap on the sides */
+    max-width: 1000px;
+  }
+  
+  .project img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  /* Below-image layout */
+  .info-row {
+    display: flex;
+    justify-content: space-between; /* name left, detail right */
+    padding-top: 8px;
+  }
+  
+  .name h3,
+  .name p,
+  .detail p {
+    margin: 0;
+  }
+  
+  .name h3 {
+    font-size: 1.2rem;
+  }
+  
+  .detail p {
+    font-weight: bold;
+    cursor: pointer;
+    color: #ff6600; /* example highlight */
+  }
+  
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background-color: #D9D9D9;
+    color: #fff;
+  }
+  
+  .footer-logo {
+    height: 40px; /* Adjust as needed */
+  }
+  
+  .footer-right a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .footer-right a:hover {
+    text-decoration: underline;
+  }
+  
+  @media (max-width: 768px) {
+    .footer {
+      flex-direction: column;
+      text-align: center;
+      padding: 10px;
+    }
+  
+    .footer-left,
+    .footer-right {
+      width: 100%;
+    }
+  
+    .footer-logo {
+      margin-bottom: 10px;
+    }
+  }

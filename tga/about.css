@@ -1,0 +1,169 @@
+.navbar-nav .nav-link {
+  color: white !important;
+}
+
+.navbar,
+.navbar-light {
+background-color:#D9D9D9;
+
+}
+
+.navbar {
+  padding-top: 0.25rem;    /* reduce top padding */
+  padding-bottom: 1rem; /* reduce bottom padding */
+  height: auto;        /* set a smaller min-height */
+}
+
+.navbar-brand img {
+  height: 100px;            /* smaller logo height */
+  width: auto;             /* keep aspect ratio */
+}
+
+.nav-link {
+  padding-top: 0.25rem;
+  padding-bottom: 1.5rem;
+  font-size: 0.9rem;       /* optionally smaller font */
+}
+
+@media (max-width: 991.98px) { /* Applies on small screens (below lg breakpoint) */
+  .navbar-collapse {
+    text-align: center;
+  }
+
+  .navbar-nav {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center the items horizontally */
+  }
+
+  .navbar-nav .nav-link {
+    width: 100%;
+  }
+}
+@media (min-width: 992px) {
+  .navbar-nav {
+    margin-right: 100px; /* move left */
+  }
+  .shift-logo{
+      margin-left: 120px;
+  }
+}
+
+body {
+  /* center image */
+ 
+  background-color: #F0F2F7;                   /* remove default margin */
+}
+  
+
+.about-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr 2fr;/* 3 equal columns */
+  gap: 10px; /* space between columns */
+  padding: 40px 10px;
+  height: auto;
+}
+
+.about-section > div {
+  padding: 10px;
+}
+
+.slogan{
+  font-size: 50px;
+  margin-top: 80px;
+}
+
+.about-us{
+  margin-left: 100px;
+}
+.description > p{
+  margin-top: 150px;
+  margin-right: 80px;
+
+}
+.achievement {
+  background-color: #121A1F;
+  height: auto;
+  margin-top: 50px;
+  color: white;
+  text-align: center;
+  padding-bottom: 150px;
+}
+
+.achieve-head {
+  padding-top: 40px; /* works now since it's not being overridden */
+}
+
+.recognise {
+  margin-top: 40px;
+}
+
+.award {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 80px;
+  margin-top: 50px;
+}
+
+.award img {
+  max-width: 100%;
+  height: 500px;
+  object-fit: contain;
+}
+
+@media (max-width: 768px) {
+  .about-section {
+    grid-template-columns: 1fr; /* stack in 1 column */
+  }
+  .about-us{
+    text-align: left;
+    margin: 0;
+    margin-top: 50px;
+  }
+  .description>p{
+    text-align: left;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  background-color: #D9D9D9;
+  color: #fff;
+}
+
+.footer-logo {
+  height: 40px; /* Adjust as needed */
+}
+
+.footer-right a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-right a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .footer {
+    flex-direction: column;
+    text-align: center;
+    padding: 10px;
+  }
+
+  .footer-left,
+  .footer-right {
+    width: 100%;
+  }
+
+  .footer-logo {
+    margin-bottom: 10px;
+  }
+}
